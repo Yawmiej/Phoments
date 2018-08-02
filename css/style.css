@@ -163,26 +163,44 @@ label{
 .test-card{
     flex: 0 0 auto;
     width: 40%;
+    min-height: 250px;
     margin-right: 10px;
     font-size: 0.8em;
+    color: #000;
 }
 
 
 .thumbs{
     width: 100%;
-    height: 50%;
+    height: 40%;
 }
 
-
-.ratings{
-    
-}
 
 .rate-star{
     display: inline-block;
     margin-right: -2px;
     width: 15px;
 }
+
+
+.profile-icon{
+    width: 3.5em;
+    float: left;
+}
+
+
+.profile-name{
+    color: #000;
+    font-weight: bold;
+    font-size: 1.3em;
+    display: inline;
+}
+
+.profile-location{
+    display: block;
+}
+
+
 
 
 

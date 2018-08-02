@@ -5,34 +5,192 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Phoments</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
     <script src="main.js"></script>
+    
+    <!-- Bootstrap -->
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page
+    via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/
+    html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/
+    respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 </head>
 <body>
     <div class="whole-container">
         <div class="top-container">
-            <img 
             <header>
-            <div class="head">
-                <p>Find and Book Freelance Photographers</p>
-                <p>Discover freelance photographers suitable for any event or project</p>
-            </div>
+                <div class="head">
+                    <img class="logo" src="svg/logo.svg">
+                    <img src="svg/hamburger.svg" class="hamburger" id="meni-icon">
+                    <h3>Find and Book Freelance Photographers</h3>
+                    <p class="head-desc">Discover freelance photographers suitable for any event or project</p>
+                    <br>
+                </div>
+            </header>
         </div>
-            <div>
-                <form id="searchForm">
-                    <label for="location">Location</label><br >
-                    <input type="text" id="location" name="location" placeholder="Anywhere" >
-                    <label for="budget"> Budget</label>
-                    <input type="text" id="budget" name="budget" placeholder="0000" >
-                    <label for="date">Date</label>
-                    <input type="date" id="date" name="date" placeholder="dd/mm/yyyy">
-                    <label for="time">Check in time</label>
-                    <input type="date" id="time" name="time" placeholder="00:00">
-                    <input type="submit" id="search" name="search" value="Search" >
+        <main class="main">
+            <section class="search">
+                <form id="searchForm" class="search-form" role="form">
+                    <div class="form-group">
+                        <label for="location">LOCATION</label><br >
+                        <select name="location" id="location" class="form-control" placeholder="" required>
+                            <option disabled selected>Select a Location</option>
+                            <option name="unilag">Unilag</option>
+                            <option name="Yaba">Yabatech</option>
+                            <option name="Yabatech">Yaba</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">BUDGET</label><br >
+                        <input type="number" class="form-control" id="location" name="location" placeholder="0000" required>
+                    </div>
+                    <div class="form-group form-date">
+                        <label for="date">DATE</label><br >
+                        <input type="date" class="form-control" id="date" name="date" placeholder="DD/MM/YYYY" required>
+                    </div>
+                    <div class="form-group form-time">
+                        <label for="time">TIME</label><br >
+                        <input type="timee" class="form-control" id="time" name="time" placeholder="00:00" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="butn btn-search">Search</button>
+                        <a href="#"><button type="button" class="butn btn-tour">Take A Tour</button></a>
+                    </div>
                 </form>
-f            </div>
-        </header>
-        <section class=""></section>
+            </section>
+        <section class="testimonials">
+            <h4 class="test-text"><strong>What people are saying about our photographers</strong></h4>
+            <div class="scrolling-wrapper">
+                
+                <div class="test-card">
+                    <img src="img/Oluchi.png" alt="thumbnail1" class="thumbs">
+                    <div class="ratings">
+                            <p>
+                                <img src="svg/full-star.svg" class="rate-star">
+                                <img src="svg/full-star.svg" class="rate-star">
+                                <img src="svg/full-star.svg" class="rate-star">
+                                <img src="svg/full-star.svg" class="rate-star">
+                                <img src="svg/empty-star.svg" class="rate-star">
+                            </p>
+                    </div>
+                    <p>
+                        It was my birthday, and boy did he make me look beautiful! I’ve never looked that good before. Thanks
+                    </p>
+                    <div class="test-profile">
+                        <a href="#"><img src="svg/profile-icon.svg" alt="profile-icon" class="profile-icon">
+                        <div class="profile-text">
+                            <span class="profile-name"><strong>Oluchi</strong></span> </a>
+                            <span class="profile-location">Yaba</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="test-card">
+                    <img src="img/Mayowa.png" alt="thumbnail1" class="thumbs">
+                    <div class="ratings">
+                            <p>
+                                <img src="svg/full-star.svg" class="rate-star">
+                                <img src="svg/full-star.svg" class="rate-star">
+                                <img src="svg/full-star.svg" class="rate-star">
+                                <img src="svg/full-star.svg" class="rate-star">
+                                <img src="svg/empty-star.svg" class="rate-star">
+                            </p>
+                    </div>
+                    <p>
+                            I run an online store where I sell shoes. Since I started using John’s servies, my sales has doubled ever since.
+                    </p>
+                    <div class="test-profile">
+                            <a href="#"><img src="svg/profile-icon.svg" alt="profile-icon" class="profile-icon">
+                            <div class="profile-text">
+                                <span class="profile-name"><strong>Lateef</strong></span> </a>
+                                <span class="profile-location">Mushin</span>
+                            </div>
+                    </div>
+                </div>
+                <div class="test-card">
+                    <img src="img/Matthew.png" alt="thumbnail" class="thumbs">
+                    <div class="ratings">
+                            <p>
+                                <img src="svg/full-star.svg" class="rate-star">
+                                <img src="svg/full-star.svg" class="rate-star">
+                                <img src="svg/full-star.svg" class="rate-star">
+                                <img src="svg/full-star.svg" class="rate-star">
+                                <img src="svg/empty-star.svg" class="rate-star">
+                            </p>
+                    </div>
+                    <p>
+                        It was my birthday, and boy did he make me look beautiful! I’ve never looked that good before. Thanks
+                    </p>
+                    <div class="test-profile">
+                            <a href="#"><img src="svg/profile-icon.svg" alt="profile-icon" class="profile-icon">
+                            <div class="profile-text">
+                                <span class="profile-name"><strong>Mayowa</strong></span> </a>
+                                <span class="profile-location">Ikeja</span>
+                            </div>
+                    </div>
+                </div>
+                <div class="test-card">
+                    <img src="img/Kazeem.png" alt="thumbnail1" class="thumbs">
+                    <div class="ratings">
+                            <p>
+                                <img src="svg/full-star.svg" class="rate-star">
+                                <img src="svg/full-star.svg" class="rate-star">
+                                <img src="svg/full-star.svg" class="rate-star">
+                                <img src="svg/full-star.svg" class="rate-star">
+                                <img src="svg/empty-star.svg" class="rate-star">
+                            </p>
+                    </div>
+                    <p>
+                        It was my birthday, and boy did he make me look beautiful! I’ve never looked that good before. Thanks
+                    </p>
+                    <div class="test-profile">
+                        <a href="#"><img src="svg/profile-icon.svg" alt="profile-icon" class="profile-icon">
+                        <div class="profile-text">
+                            <span class="profile-name"><strong>Nneka</strong></span> </a>
+                            <span class="profile-location">Ikoyi</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="test-card">
+                <img src="img/Boye.png" alt="thumbnail1" class="thumbs">
+                    <div class="ratings">
+                            <p>
+                                <img src="svg/full-star.svg" class="rate-star">
+                                <img src="svg/full-star.svg" class="rate-star">
+                                <img src="svg/full-star.svg" class="rate-star">
+                                <img src="svg/full-star.svg" class="rate-star">
+                                <img src="svg/empty-star.svg" class="rate-star">
+                            </p>
+                    </div>
+                    <p>
+                        It was my birthday, and boy did he make me look beautiful! I’ve never looked that good before. Thanks
+                    </p>
+                    <div class="test-profile">
+                            <a href="#"><img src="svg/profile-icon.svg" alt="profile-icon" class="profile-icon">
+                            <div class="profile-text">
+                                <span class="profile-name"><strong>James</strong></span> </a>
+                                <span class="profile-location">Surulere</span>
+                            </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
     </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>
