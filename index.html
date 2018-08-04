@@ -6,7 +6,7 @@
     <title>Phoments</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
     
     <!-- Bootstrap -->
     
@@ -30,13 +30,27 @@
             <header>
                 <div class="head">
                     <img class="logo" src="svg/logo.svg">
-                    <img src="svg/hamburger.svg" class="hamburger" id="meni-icon">
+                    <img src="svg/hamburger.svg" class="hamburger" id="menu-icon" onclick="openNav()">
                     <h3>Find and Book Freelance Photographers</h3>
                     <p class="head-desc">Discover freelance photographers suitable for any event or project</p>
                     <br>
                 </div>
             </header>
         </div>
+        <div class="nav-opacity" id="navLeft"></div>
+        <nav id="sideNav" class="side-nav">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+            <img src="svg/logo-black.svg" class="nav-logo">
+            <a href="#">Home</a>
+            <hr>
+            <a href="#">Book Photographer</a>
+            <a href="#">Moments</a>
+            <hr>
+            <a href="#">Become a Photographer</a>
+            <hr>
+            <a href="#">Log in</a>
+            <a href="#">Sign Up</a>
+        </nav>
         <main class="main">
             <section class="search">
                 <form id="searchForm" class="search-form" role="form">
@@ -45,8 +59,8 @@
                         <select name="location" id="location" class="form-control" placeholder="" required>
                             <option disabled selected>Select a Location</option>
                             <option name="unilag">Unilag</option>
-                            <option name="Yaba">Yabatech</option>
-                            <option name="Yabatech">Yaba</option>
+                            <option name="yaba">Yaba</option>
+                            <option name="yabatech">Yabatech</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -67,124 +81,125 @@
                     </div>
                 </form>
             </section>
-        <section class="testimonials">
-            <h4 class="test-text"><strong>What people are saying about our photographers</strong></h4>
-            <div class="scrolling-wrapper">
-                
-                <div class="test-card">
-                    <img src="img/Oluchi.png" alt="thumbnail1" class="thumbs">
-                    <div class="ratings">
-                            <p>
-                                <img src="svg/full-star.svg" class="rate-star">
-                                <img src="svg/full-star.svg" class="rate-star">
-                                <img src="svg/full-star.svg" class="rate-star">
-                                <img src="svg/full-star.svg" class="rate-star">
-                                <img src="svg/empty-star.svg" class="rate-star">
-                            </p>
-                    </div>
-                    <p>
-                        It was my birthday, and boy did he make me look beautiful! I’ve never looked that good before. Thanks
-                    </p>
-                    <div class="test-profile">
-                        <a href="#"><img src="svg/profile-icon.svg" alt="profile-icon" class="profile-icon">
-                        <div class="profile-text">
-                            <span class="profile-name"><strong>Oluchi</strong></span> </a>
-                            <span class="profile-location">Yaba</span>
+            <section class="testimonials">
+                <h4 class="test-text"><strong>What people are saying about our photographers</strong></h4>
+                <div class="scrolling-wrapper">
+                    
+                    <div class="test-card">
+                        <img src="img/Oluchi.png" alt="thumbnail1" class="thumbs">
+                        <div class="ratings">
+                                <p>
+                                    <img src="svg/full-star.svg" class="rate-star">
+                                    <img src="svg/full-star.svg" class="rate-star">
+                                    <img src="svg/full-star.svg" class="rate-star">
+                                    <img src="svg/full-star.svg" class="rate-star">
+                                    <img src="svg/empty-star.svg" class="rate-star">
+                                </p>
+                        </div>
+                        <p>
+                            It was my birthday, and boy did he make me look beautiful! I’ve never looked that good before. Thanks
+                        </p>
+                        <div class="test-profile">
+                            <a href="#"><img src="svg/profile-icon.svg" alt="profile-icon" class="profile-icon">
+                            <div class="profile-text">
+                                <span class="profile-name"><strong>Oluchi</strong></span> </a>
+                                <span class="profile-location">Yaba</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="test-card">
-                    <img src="img/Mayowa.png" alt="thumbnail1" class="thumbs">
-                    <div class="ratings">
-                            <p>
-                                <img src="svg/full-star.svg" class="rate-star">
-                                <img src="svg/full-star.svg" class="rate-star">
-                                <img src="svg/full-star.svg" class="rate-star">
-                                <img src="svg/full-star.svg" class="rate-star">
-                                <img src="svg/empty-star.svg" class="rate-star">
-                            </p>
-                    </div>
-                    <p>
-                            I run an online store where I sell shoes. Since I started using John’s servies, my sales has doubled ever since.
-                    </p>
-                    <div class="test-profile">
-                            <a href="#"><img src="svg/profile-icon.svg" alt="profile-icon" class="profile-icon">
-                            <div class="profile-text">
-                                <span class="profile-name"><strong>Lateef</strong></span> </a>
-                                <span class="profile-location">Mushin</span>
-                            </div>
-                    </div>
-                </div>
-                <div class="test-card">
-                    <img src="img/Matthew.png" alt="thumbnail" class="thumbs">
-                    <div class="ratings">
-                            <p>
-                                <img src="svg/full-star.svg" class="rate-star">
-                                <img src="svg/full-star.svg" class="rate-star">
-                                <img src="svg/full-star.svg" class="rate-star">
-                                <img src="svg/full-star.svg" class="rate-star">
-                                <img src="svg/empty-star.svg" class="rate-star">
-                            </p>
-                    </div>
-                    <p>
-                        It was my birthday, and boy did he make me look beautiful! I’ve never looked that good before. Thanks
-                    </p>
-                    <div class="test-profile">
-                            <a href="#"><img src="svg/profile-icon.svg" alt="profile-icon" class="profile-icon">
-                            <div class="profile-text">
-                                <span class="profile-name"><strong>Mayowa</strong></span> </a>
-                                <span class="profile-location">Ikeja</span>
-                            </div>
-                    </div>
-                </div>
-                <div class="test-card">
-                    <img src="img/Kazeem.png" alt="thumbnail1" class="thumbs">
-                    <div class="ratings">
-                            <p>
-                                <img src="svg/full-star.svg" class="rate-star">
-                                <img src="svg/full-star.svg" class="rate-star">
-                                <img src="svg/full-star.svg" class="rate-star">
-                                <img src="svg/full-star.svg" class="rate-star">
-                                <img src="svg/empty-star.svg" class="rate-star">
-                            </p>
-                    </div>
-                    <p>
-                        It was my birthday, and boy did he make me look beautiful! I’ve never looked that good before. Thanks
-                    </p>
-                    <div class="test-profile">
-                        <a href="#"><img src="svg/profile-icon.svg" alt="profile-icon" class="profile-icon">
-                        <div class="profile-text">
-                            <span class="profile-name"><strong>Nneka</strong></span> </a>
-                            <span class="profile-location">Ikoyi</span>
+                    <div class="test-card">
+                        <img src="img/Mayowa.png" alt="thumbnail1" class="thumbs">
+                        <div class="ratings">
+                                <p>
+                                    <img src="svg/full-star.svg" class="rate-star">
+                                    <img src="svg/full-star.svg" class="rate-star">
+                                    <img src="svg/full-star.svg" class="rate-star">
+                                    <img src="svg/full-star.svg" class="rate-star">
+                                    <img src="svg/empty-star.svg" class="rate-star">
+                                </p>
+                        </div>
+                        <p>
+                                I run an online store where I sell shoes. Since I started using John’s servies, my sales has doubled ever since.
+                        </p>
+                        <div class="test-profile">
+                                <a href="#"><img src="svg/profile-icon.svg" alt="profile-icon" class="profile-icon">
+                                <div class="profile-text">
+                                    <span class="profile-name"><strong>Lateef</strong></span> </a>
+                                    <span class="profile-location">Mushin</span>
+                                </div>
                         </div>
                     </div>
-                </div>
-                <div class="test-card">
-                <img src="img/Boye.png" alt="thumbnail1" class="thumbs">
-                    <div class="ratings">
-                            <p>
-                                <img src="svg/full-star.svg" class="rate-star">
-                                <img src="svg/full-star.svg" class="rate-star">
-                                <img src="svg/full-star.svg" class="rate-star">
-                                <img src="svg/full-star.svg" class="rate-star">
-                                <img src="svg/empty-star.svg" class="rate-star">
-                            </p>
+                    <div class="test-card">
+                        <img src="img/Matthew.png" alt="thumbnail" class="thumbs">
+                        <div class="ratings">
+                                <p>
+                                    <img src="svg/full-star.svg" class="rate-star">
+                                    <img src="svg/full-star.svg" class="rate-star">
+                                    <img src="svg/full-star.svg" class="rate-star">
+                                    <img src="svg/full-star.svg" class="rate-star">
+                                    <img src="svg/empty-star.svg" class="rate-star">
+                                </p>
+                        </div>
+                        <p>
+                            It was my birthday, and boy did he make me look beautiful! I’ve never looked that good before. Thanks
+                        </p>
+                        <div class="test-profile">
+                                <a href="#"><img src="svg/profile-icon.svg" alt="profile-icon" class="profile-icon">
+                                <div class="profile-text">
+                                    <span class="profile-name"><strong>Mayowa</strong></span> </a>
+                                    <span class="profile-location">Ikeja</span>
+                                </div>
+                        </div>
                     </div>
-                    <p>
-                        It was my birthday, and boy did he make me look beautiful! I’ve never looked that good before. Thanks
-                    </p>
-                    <div class="test-profile">
+                    <div class="test-card">
+                        <img src="img/Kazeem.png" alt="thumbnail1" class="thumbs">
+                        <div class="ratings">
+                                <p>
+                                    <img src="svg/full-star.svg" class="rate-star">
+                                    <img src="svg/full-star.svg" class="rate-star">
+                                    <img src="svg/full-star.svg" class="rate-star">
+                                    <img src="svg/full-star.svg" class="rate-star">
+                                    <img src="svg/empty-star.svg" class="rate-star">
+                                </p>
+                        </div>
+                        <p>
+                            It was my birthday, and boy did he make me look beautiful! I’ve never looked that good before. Thanks
+                        </p>
+                        <div class="test-profile">
                             <a href="#"><img src="svg/profile-icon.svg" alt="profile-icon" class="profile-icon">
                             <div class="profile-text">
-                                <span class="profile-name"><strong>James</strong></span> </a>
-                                <span class="profile-location">Surulere</span>
+                                <span class="profile-name"><strong>Nneka</strong></span> </a>
+                                <span class="profile-location">Ikoyi</span>
                             </div>
+                        </div>
                     </div>
+                    <div class="test-card">
+                    <img src="img/Boye.png" alt="thumbnail1" class="thumbs">
+                        <div class="ratings">
+                                <p>
+                                    <img src="svg/full-star.svg" class="rate-star">
+                                    <img src="svg/full-star.svg" class="rate-star">
+                                    <img src="svg/full-star.svg" class="rate-star">
+                                    <img src="svg/full-star.svg" class="rate-star">
+                                    <img src="svg/empty-star.svg" class="rate-star">
+                                </p>
+                        </div>
+                        <p>
+                            It was my birthday, and boy did he make me look beautiful! I’ve never looked that good before. Thanks
+                        </p>
+                        <div class="test-profile">
+                                <a href="#"><img src="svg/profile-icon.svg" alt="profile-icon" class="profile-icon">
+                                <div class="profile-text">
+                                    <span class="profile-name"><strong>James</strong></span> </a>
+                                    <span class="profile-location">Surulere</span>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    
                 </div>
-                
-                
-            </div>
-        </section>
+            </section>
+        </main>
     </div>
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
