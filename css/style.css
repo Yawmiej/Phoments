@@ -90,6 +90,52 @@ body{
 }
 
 
+.side-nav a{
+  padding: 5px 5px 5px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.side-nav a:hover{
+  background-color: #F35E86;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.side-nav .nav-logo{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.side-nav .close-btn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size:36px;
+  margin-left: 50px;
+}
+
+
+.side-nav .close-btn:hover{
+  color: #F35E86;
+  background-color: rgb(243, 242, 242);
+}
+
+
+.side-nav .nav-links{
+  margin-top: 20px;
+}
+
+
+.side-nav hr{
+  margin: 10px;
+  border-color: #999;
+}
+
 .main{
     margin: 10px;
     padding: 10px;
