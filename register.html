@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sign in</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <script src="js/main.js"></script>
+    
+    <!-- Bootstrap -->
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page
+    via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/
+    html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/
+    respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+<body>
+    <header class="signup-header">
+        <img src="svg/hamburger.svg" class="hamburger" id="menu-icon" onclick="openNav()">
+    </header>
+    <div class="nav-opacity" id="navLeft" onclick="closeNav()"></div>
+    <nav id="sideNav" class="side-nav">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+            <img src="svg/logo-black.svg" class="nav-logo">
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <hr>
+                <a href="#">Book Photographer</a>
+                <a href="#">Moments</a>
+                <hr>
+                <a href="#">Become a Photographer</a>
+                <hr>
+                <a href="#">Log in</a>
+                <a href="#">Sign Up</a>
+            </div>
+    </nav>
+    <main class="signup-main">
+        <img src="svg/logo-black.svg" class="signup-logo">
+        <section class="sign-form">
+            <form class="signup-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Confirm Password</label>
+                    <input type="password" class="form-control" id="password2" name="password2" required>
+                </div>
+                <div class="form-group">
+                    <label for="terms">
+                        <input type="checkbox" value="agree"> By signing up, you agree to our 
+                        <a href="#terms"><span>terms</span></a> and <a href="#conditions"><span>conditions</span></a>
+                    </label>
+                </div>
+                <button type="submit" class="butn btn-signup">Sign up</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+            <hr>
+            <div class="footer-items">
+                <span class="footer-text">Phoments</span>
+                <a href="facebook.com/phoments"><img src="svg/facebook-icon.svg"alt="facebook page"></a>
+                <a href="twitter.com/phoments"><img src="svg/twitter-icon.svg" alt="twitter page"></a>
+                <a href="instagram.com/phoments"><img src="svg/instagram-icon.svg" alt="instagram page"></a>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>

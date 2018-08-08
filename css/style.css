@@ -1,6 +1,14 @@
+/*Don't know if this is a good idea, 
+but am going to use a single css file for all my pages, crazzy right?
+i think it will ensure consistency, and make it easier to reuse styles.
+i really hope this end well*/
+
+
+/*Section1: Index.html css starts from here, some of the things included here 
+are used in other pages, e.g Nav menu, footer.*/
+
 body{
     width: 100%;
-    height: 100%;
     margin: 0px;
     font-family: 'Lato';
 }
@@ -21,6 +29,10 @@ body{
     background-image: url("../img/homeimage.jpg")
 }
 
+
+header{
+    width: 100%;
+}
 
 .head{
     width: 100%;
@@ -65,13 +77,16 @@ body{
     text-align: center;
 }
 
+/*Menu starts here
+it is applied to all pages with menu*/
+
 .nav-opacity{
     height: 100%;
     width: 20%;
     position: fixed;
     z-index: 1;
     top: 0;
-    left:-20%;
+    left: -20%;
     background-color: rgba(0, 0, 0, 0.3);
     overflow-x: hidden;
     transition: 0.5s;
@@ -96,7 +111,7 @@ body{
   font-size: 18px;
   color: #111;
   display: block;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 
@@ -106,9 +121,8 @@ body{
   transition: 0.3s;
 }
 
-.side-nav .nav-logo{
-  margin-left: auto;
-  margin-right: auto;
+.nav-logo{
+  margin-left: 25%;
 }
 
 .side-nav .close-btn{
@@ -135,6 +149,8 @@ body{
   margin: 10px;
   border-color: #999;
 }
+
+/*Menu ends here*/
 
 .main{
     margin: 10px;
@@ -272,14 +288,80 @@ label{
 }
 
 
+.footer{
+    width: 100%;
+    padding: 10px;
+    bottom: 0;
+}
 
+
+.footer hr{
+    border-width: 2px;
+    border-color: #c4c4c4;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+
+.footer-items{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+
+/*Section1 and index.html style ends here*/
+
+
+
+
+/*Section2: This section is for register.html*/
+
+.signup-header{
+    display: block;
+    padding: 0.1em;
+    margin: 0;
+}
+.signup-main{
+    display: block;
+    margin: 20% 2em 2em;
+}
+
+
+.signup-logo{
+    width: 40%;
+    margin-left: 25%;
+    margin-right: auto;
+}
+
+
+.sign-form{
+    margin-top: 3em;
+}
+
+
+.sign-form label{
+    text-decoration: none;
+    font-size: 1em;
+}
+
+
+.btn-signup{
+    width: 50%;
+    background-color: #F35E86;
+    margin-left: 25%;
+    margin-right: auto;
+    color: #fff;
+}
+
+/*Section2 and register.html ends here*/
 
 
 
 /* To be removed when building desktop responsive*/
 
 @media screen and (min-width: 450px){
-    body{
+    body, html{
         width: 450px;
         margin: auto;
     }
