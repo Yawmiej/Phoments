@@ -13,3 +13,19 @@ function closeNav(){
 }
 
 //Section1 ends here
+
+//Section2: This section is for signup button activation
+
+function agree(checkbox, signupButton){
+  var button = document.getElementById(signupButton);
+
+  if(checkbox.checked === true){
+    button.disabled = "";
+    button.style.backgroundColor = "#F35E86";
+  } else{
+    button.disabled = "disabled";
+    button.style.backgroundColor = "#999";
+  }
+}
+
+//Section2 ends

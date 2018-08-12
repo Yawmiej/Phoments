@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sign up</title>
+    <title>Log in</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
     <script src="js/main.js"></script>
@@ -41,14 +41,14 @@
                 <hr>
                 <a href="#">Become a Photographer</a>
                 <hr>
-                <a href="#">Log in</a>
-                <a href="#">Sign Up</a>
+                <a href="login.html">Log in</a>
+                <a href="register.html">Sign Up</a>
             </div>
     </nav>
     <main class="signup-main">
         <img src="svg/logo-black.svg" class="signup-logo">
         <section class="sign-form">
-            <form class="signup-form">
+            <form class="login-form">
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" id="email" name="email" required>
@@ -57,25 +57,27 @@
                     <label for="email">Password</label>
                     <input type="password" class="form-control" id="password" name="password" required>
                 </div>
-                <div class="form-group">
-                    <label for="email">Confirm Password</label>
-                    <input type="password" class="form-control" id="password2" name="password2" required>
-                </div>
-                <div class="form-group">
-                    <label for="terms">
-                        <input type="checkbox" id="agreeTerms" onchange="agree(this, 'signupButton')"> By signing up, you agree to our 
-                        <a href="#terms"><span>terms</span></a> and <a href="#conditions"><span>conditions</span></a>
-                    </label>
-                </div>
-                <button type="submit" class="butn btn-signup" disabled="disabled" id="signupButton">Sign up</button>
+                <button type="submit" class="butn btn-login" disabled="disabled" id="btnSignup">Log in</button>
             </form>
         </section>
         <section class="alt-signup">
           <hr>
           <span>OR</span>
           <hr>
+          <div class="alt-signup-icons">
+              <a href="facebook.com/phoments"><img src="svg/facebook-icon.svg"alt="facebook page"></a>
+              <a href="twitter.com/phoments"><img src="svg/twitter-icon.svg" alt="twitter page"></a>
+              <a href="instagram.com/phoments"><img src="svg/instagram-icon.svg" alt="instagram page"></a>
+          </div>
         </section>
     </main>
+    <footer class="footer">
+            <hr>
+            <div class="footer-items">
+                <span class="footer-text">Phoments</span>
+               
+            </div>
+        </footer>
     </div>
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

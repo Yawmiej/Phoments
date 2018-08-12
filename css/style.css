@@ -348,13 +348,53 @@ label{
 
 .btn-signup{
     width: 50%;
-    background-color: #F35E86;
+    background-color: #999;
     margin-left: 25%;
     margin-right: auto;
     color: #fff;
 }
 
+
+.alt-signup{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.alt-signup hr{
+  width: 44%;
+  display: inline-block;
+  margin-top: 40px;
+  border-color: rgb(185, 182, 182);
+}
+
+
+
+.alt-signup span{
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  margin: 0 5px;
+}
+
+
+.alt-signup-icons{
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /*Section2 and register.html ends here*/
+
+
+/*Section3: Style for Log in page starts here*/
+
+.btn-login{
+  width: 50%;
+  background-color: #F35E86;
+  margin-left: 25%;
+  margin-right: auto;
+  color: #fff;
+}
 
 
 
