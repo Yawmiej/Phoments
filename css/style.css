@@ -11,7 +11,7 @@ body{
     width: 100%;
     margin: 0px;
     font-family: 'segoe UI';
-    text-decoration: none
+    text-decoration: none;
 }
 
 
@@ -408,6 +408,75 @@ label{
 }
 
 
+/*Section4: Style for search.html starts here*/
+
+
+
+.photographers{
+    width: 80%;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pg-row{
+    display: block;
+    width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.pg-card{
+    width: 13.2em;
+    display: inline-block;
+    padding: 0.5em;
+}
+
+.pg-card a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.pg-img{
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+
+.pg-icon{
+    width: 3.5em;
+    float: left;
+}
+
+.pg-list{
+    display: inline;
+}
+
+
+.pg-list li{
+    list-style: none;
+}
+
+
+.pg-name{
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.pg-price{
+    font-size: 0.8em;
+}
+
+
+.pg-star{
+    width: 0.9em;
+    margin-right: -2px;
+}
+
+.pg-dot{
+    width: 0.5em;
+}
 
 /* To be removed when building desktop responsive*/
 
