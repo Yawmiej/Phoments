@@ -26,6 +26,29 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 </head>
 <body>
+  <header>
+    <div class="search-head">
+      <a href="index.html"><img src="svg/logo-black.svg" alt="logo"></a>
+      <input type="text" placeholder='Try "15000"' class="pg-search " >
+      <img src="svg/hamburger.svg" class="hamburger" id="menu-icon" onclick="openNav()">
+    </div>
+  </header>
+  <div class="nav-opacity" id="navLeft" onclick="closeNav()"></div>
+  <nav id="sideNav" class="side-nav">
+    <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+    <img src="svg/logo-black.svg" class="nav-logo">
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <hr>
+      <a href="#">Book Photographer</a>
+      <a href="#">Moments</a>
+      <hr>
+      <a href="#">Become a Photographer</a>
+      <hr>
+      <a href="login.html">Log in</a>
+      <a href="register.html">Sign Up</a>
+    </div>
+  </nav>
   
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://code.jquery.com/jquery.js"></script>

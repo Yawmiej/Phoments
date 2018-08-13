@@ -29,10 +29,26 @@
     <header>
         <div class="search-head">
             <a href="index.html"><img src="svg/logo-black.svg" alt="logo"></a>
-            <input type="text" placeholder='Try "15000"' >
+            <input type="text" placeholder='Try "15000"' class="pg-search " >
             <img src="svg/hamburger.svg" class="hamburger" id="menu-icon" onclick="openNav()">
         </div>
     </header>
+    <div class="nav-opacity" id="navLeft" onclick="closeNav()"></div>
+    <nav id="sideNav" class="side-nav">
+      <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+      <img src="svg/logo-black.svg" class="nav-logo">
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <hr>
+        <a href="#">Book Photographer</a>
+        <a href="#">Moments</a>
+        <hr>
+        <a href="#">Become a Photographer</a>
+        <hr>
+        <a href="login.html">Log in</a>
+        <a href="register.html">Sign Up</a>
+      </div>
+    </nav>
     <main>
         <section class="photographers">
             <h3>Photographers</h3>
@@ -42,8 +58,8 @@
                         <a href="#"><img src="img/Boye.png" class="pg-img"></a>
                         <div class="pg-list">
                             <img src="svg/Ellipse.svg" class="pg-icon">
-                            <li class="pg-name">Adewale Kazeem</li>
-                            <li class="pg-price"><span id="pgPrice">10,000</span> per session</li>
+                            <li class="pg-name">Eporse Media</li>
+                            <li class="pg-price"><span id="pgPrice">‎₦15,000</span> per session</li>
                             <li class="pg-rate">
                                 <img src="svg/full-star.svg" class="pg-star">
                                 <img src="svg/full-star.svg" class="pg-star">
@@ -51,7 +67,7 @@
                                 <img src="svg/full-star.svg" class="pg-star">
                                 <img src="svg/empty-star.svg" class="pg-star">
                                 <img src="svg/dot.svg" class="pg-rate">
-                                <span class="rate-count" id="rateCount">54</span>
+                                <span class="rate-count" id="rateCount">20</span>
                             </li>
                         </div>
                     </div>
@@ -60,7 +76,79 @@
                         <div class="pg-list">
                             <img src="svg/Ellipse.svg" class="pg-icon">
                             <li class="pg-name">Adewale Kazeem</li>  
-                            <li class="pg-price"><span id="pgPrice">10,000</span> per session</li>
+                            <li class="pg-price"><span id="pgPrice">‎₦10,000</span> per session</li>
+                            <li class="pg-rate">
+                                <img src="svg/full-star.svg" class="pg-star">
+                                <img src="svg/full-star.svg" class="pg-star">
+                                <img src="svg/full-star.svg" class="pg-star">
+                                <img src="svg/full-star.svg" class="pg-star">
+                                <img src="svg/empty-star.svg" class="pg-star">
+                                <img src="svg/dot.svg" class="pg-rate">
+                                <span class="rate-count" id="rateCount">6</span>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="pg-row">
+                  <div class="pg-card">
+                      <a href="#"><img src="img/Matthew.png" class="pg-img"></a>
+                      <div class="pg-list">
+                          <img src="svg/Ellipse.svg" class="pg-icon">
+                          <li class="pg-name">Esther Afelishe</li>
+                          <li class="pg-price"><span id="pgPrice">‎₦20,500</span> per session</li>
+                          <li class="pg-rate">
+                              <img src="svg/full-star.svg" class="pg-star">
+                              <img src="svg/full-star.svg" class="pg-star">
+                              <img src="svg/full-star.svg" class="pg-star">
+                              <img src="svg/full-star.svg" class="pg-star">
+                              <img src="svg/empty-star.svg" class="pg-star">
+                              <img src="svg/dot.svg" class="pg-rate">
+                              <span class="rate-count" id="rateCount">10</span>
+                          </li>
+                      </div>
+                  </div>
+                  <div class="pg-card">
+                      <a href="#"><img src="img/Mayowa.png" class="pg-img"></a>
+                      <div class="pg-list">
+                          <img src="svg/Ellipse.svg" class="pg-icon">
+                          <li class="pg-name">Boye 69</li>  
+                          <li class="pg-price"><span id="pgPrice">‎₦8,000</span> per session</li>
+                          <li class="pg-rate">
+                              <img src="svg/full-star.svg" class="pg-star">
+                              <img src="svg/full-star.svg" class="pg-star">
+                              <img src="svg/full-star.svg" class="pg-star">
+                              <img src="svg/full-star.svg" class="pg-star">
+                              <img src="svg/empty-star.svg" class="pg-star">
+                              <img src="svg/dot.svg" class="pg-rate">
+                              <span class="rate-count" id="rateCount">30</span>
+                          </li>
+                      </div>
+                  </div>
+              </div>
+                <div class="pg-row">
+                    <div class="pg-card">
+                        <a href="#"><img src="img/Oluchi.png" class="pg-img"></a>
+                        <div class="pg-list">
+                            <img src="svg/Ellipse.svg" class="pg-icon">
+                            <li class="pg-name">Dammy Ayo</li>
+                            <li class="pg-price"><span id="pgPrice">‎₦13,000</span> per session</li>
+                            <li class="pg-rate">
+                                <img src="svg/full-star.svg" class="pg-star">
+                                <img src="svg/full-star.svg" class="pg-star">
+                                <img src="svg/full-star.svg" class="pg-star">
+                                <img src="svg/full-star.svg" class="pg-star">
+                                <img src="svg/empty-star.svg" class="pg-star">
+                                <img src="svg/dot.svg" class="pg-rate">
+                                <span class="rate-count" id="rateCount">4</span>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="pg-card">
+                        <a href="#"><img src="img/Kazeem.png" class="pg-img"></a>
+                        <div class="pg-list">
+                            <img src="svg/Ellipse.svg" class="pg-icon">
+                            <li class="pg-name">Abiodun Lateef</li>
+                            <li class="pg-price"><span id="pgPrice">‎₦14,000</span> per session</li>
                             <li class="pg-rate">
                                 <img src="svg/full-star.svg" class="pg-star">
                                 <img src="svg/full-star.svg" class="pg-star">
@@ -74,42 +162,55 @@
                     </div>
                 </div>
                 <div class="pg-row">
-                    <div class="pg-card">
-                        <a href="#"><img src="img/Boye.png" class="pg-img"></a>
-                        <div class="pg-list">
-                            <img src="svg/Ellipse.svg" class="pg-icon">
-                            <li class="pg-name">Adewale Kazeem</li>
-                            <li class="pg-price"><span id="pgPrice">10,000</span> per session</li>
-                            <li class="pg-rate">
-                                <img src="svg/full-star.svg" class="pg-star">
-                                <img src="svg/full-star.svg" class="pg-star">
-                                <img src="svg/full-star.svg" class="pg-star">
-                                <img src="svg/full-star.svg" class="pg-star">
-                                <img src="svg/empty-star.svg" class="pg-star">
-                                <img src="svg/dot.svg" class="pg-rate">
-                                <span class="rate-count" id="rateCount">54</span>
-                            </li>
-                        </div>
-                    </div>
-                    <div class="pg-card">
-                        <a href="#"><img src="img/Kazeem.png" class="pg-img"></a>
-                        <div class="pg-list">
-                            <img src="svg/Ellipse.svg" class="pg-icon">
-                            <li class="pg-name">Adewale Kazeem</li>
-                            <li class="pg-price"><span id="pgPrice">10,000</span> per session</li>
-                            <li class="pg-rate">
-                                <img src="svg/full-star.svg" class="pg-star">
-                                <img src="svg/full-star.svg" class="pg-star">
-                                <img src="svg/full-star.svg" class="pg-star">
-                                <img src="svg/full-star.svg" class="pg-star">
-                                <img src="svg/empty-star.svg" class="pg-star">
-                                <img src="svg/dot.svg" class="pg-rate">
-                                <span class="rate-count" id="rateCount">54</span>
-                            </li>
-                        </div>
-                    </div>
+                  <button type="button" class="pg-button" ><strong>Show all</strong></button>
                 </div>
             </div>
+        </section>
+        <section class="pg-desc">
+          <div class="desc-info">
+            <p>
+              <img src="svg/smiley.svg">
+              <h4>Easiest Way Yet!</h4>
+              <span>One tap, and you find a list of photographers that fit your unique needs. 
+                Book - the photographer know what to do, 
+                and you get your precious moments delivered to you in no time.
+              </span>
+          </div>
+          <div class="desc-info">
+            <p>
+              <img src="svg/mark.svg">
+              <h4>Any Event, Any Time</h4>
+              <span>
+                Birthday, social event, or just for fun, whatever piques your fancy,
+                 we’ve got just the right freelance photographer for you. 
+                Count on us to ensure that that precious moments are gloriously documented. 
+              </span>
+            </p>
+          </div>
+          <div class="desc-info">
+            <p>
+              <img src="svg/camera.svg">
+              <h4>Reliable Freelance Photographers</h4>
+              <span>
+                  Within our bank, we have a crop of reliable freelane photographers 
+                  who won’t let you down - and if they do, 
+                  we’ll either find you another photographer or refund you.
+              </span>
+            </p>
+          </div>
+          <div class="desc-info">
+            <p>
+              <img src="svg/headset.svg">
+              <h4>Prompt Customer Support</h4>
+              <span>
+                  Got any trouble, want to postpone your appointment, 
+                  or just need someone to talk to, our customer agents are here for you.
+              </span>
+            </p>
+          </div>
+        </section>
+        <section class="meet-pg">
+          <p>Behind the viewfinder</p>
         </section>
     </main>
 
