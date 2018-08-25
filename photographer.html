@@ -1,57 +1,91 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Photgrapher Name</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
-    <script src="js/main.js"></script>
-    
-    <!-- Bootstrap -->
-    
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page
-    via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/
-    html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/
-    respond.min.js"></script>
-    <![endif]-->
+  <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Photgrapher Name</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+      <script src="js/main.js"></script>
+      
+      <!-- Bootstrap -->
+      
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page
+      via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/
+      html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/
+      respond.min.js"></script>
+      <![endif]-->
 
-    <link rel="icon" href="img/favicon.png">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-</head>
-<body>
-  <header>
-    <div class="search-head">
-      <a href="index.html"><img src="svg/logo-black.svg" alt="logo"></a>
-      <input type="text" placeholder='Try "15000"' class="pg-search " >
-      <img src="svg/hamburger.svg" class="hamburger" id="menu-icon" onclick="openNav()">
-    </div>
-  </header>
-  <div class="nav-opacity" id="navLeft" onclick="closeNav()"></div>
-  <nav id="sideNav" class="side-nav">
-    <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
-    <img src="svg/logo-black.svg" class="nav-logo">
-    <div class="nav-links">
-      <a href="#">Home</a>
-      <hr>
-      <a href="#">Book Photographer</a>
-      <a href="#">Moments</a>
-      <hr>
-      <a href="#">Become a Photographer</a>
-      <hr>
-      <a href="login.html">Log in</a>
-      <a href="register.html">Sign Up</a>
-    </div>
-  </nav>
-  
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
-</body>
+      <link rel="icon" href="img/favicon.png">
+      <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="search-head">
+        <a href="index.html"><img src="svg/logo-black.svg" alt="logo"></a>
+        <input type="text" placeholder='Try "15000"' class="pg-search " >
+        <img src="svg/hamburger.svg" class="hamburger" id="menu-icon" onclick="openNav()">
+      </div>
+    </header>
+    <div class="nav-opacity" id="navLeft" onclick="closeNav()"></div>
+    <nav id="sideNav" class="side-nav">
+      <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+      <img src="svg/logo-black.svg" class="nav-logo">
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <hr>
+        <a href="#">Book Photographer</a>
+        <a href="#">Moments</a>
+        <hr>
+        <a href="#">Become a Photographer</a>
+        <hr>
+        <a href="login.html">Log in</a>
+        <a href="register.html">Sign Up</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="pg-profile">
+        <div class="pg-container">
+          <img src="img/Photograph.png" class="p-g" id="Photograph">
+          <div class="image-objects">
+            <a href="#upload"> <img src="svg/upload.svg"></a>
+            <a href="#like"><img src="svg/favourite.svg"></a>
+          </div>
+          <button class="butn btn-more" type="button">View Photos</button>
+        </div>
+        <div class="pg-db">
+          <div class="pg-pr">
+            <li class="p-price"><span id="pgPrice"><strong>₦10,000</strong></span> per session</li>
+            <li class="p-rate">
+                <img src="svg/full-star.svg" class="p-star">
+                <img src="svg/full-star.svg" class="p-star">
+                <img src="svg/full-star.svg" class="p-star">
+                <img src="svg/full-star.svg" class="p-star">
+                <img src="svg/empty-star.svg" class="p-star">
+                <img src="svg/dot.svg" width="8em">
+                <span class="rate-count" id="rateCount">54</span>
+            </li>
+          </div>
+          <button class="book-pg" id="bookPg" type="button" onclick="book()">Request to Book</button>
+        </div>
+        <div class="p-nld">
+          <h4 id="PgName">Eporse Media</h4>
+          <span class="p-location">Unilag</span>
+        </div>
+      </section>
+
+    </main>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

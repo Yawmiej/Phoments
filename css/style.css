@@ -7,11 +7,35 @@ i really hope this end well*/
 /*Section1: Index.html css starts from here, some of the things included here 
 are used in other pages, e.g Nav menu, footer.*/
 
-body{
+/*General styles*/
+
+
+body,
+html{
     width: 100%;
     margin: 0px;
     font-family: 'segoe UI';
     text-decoration: none;
+}
+
+
+body,
+header,
+footer,
+section,
+main,
+article{
+    box-sizing: border-box;
+}
+
+
+header{
+    width: 100%;
+}
+
+
+li{
+    list-style: none;
 }
 
 
@@ -31,9 +55,6 @@ body{
 }
 
 
-header{
-    width: 100%;
-}
 
 .head{
     width: 100%;
@@ -81,6 +102,9 @@ header{
 /*Menu starts here
 it is applied to all pages with menu*/
 
+
+
+
 .nav-opacity{
     height: 100%;
     width: 20%;
@@ -88,7 +112,7 @@ it is applied to all pages with menu*/
     z-index: 1;
     top: 0;
     left: -20%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -117,7 +141,7 @@ it is applied to all pages with menu*/
 
 
 .side-nav a:hover{
-  background-color: #F35E86;
+  background-color: #ED164F;
   color: #fff;
   transition: 0.3s;
 }
@@ -136,7 +160,7 @@ it is applied to all pages with menu*/
 
 
 .side-nav .close-btn:hover{
-  color: #F35E86;
+  color: #ED164F;
   background-color: rgb(243, 242, 242);
 }
 
@@ -152,6 +176,9 @@ it is applied to all pages with menu*/
 }
 
 /*Menu ends here*/
+
+/* Index.html starts here*/
+
 
 .main{
     margin: 10px;
@@ -198,7 +225,7 @@ label{
 }
 
 .btn-search{
-    background-color: #F35E86;
+    background-color: #ED164F;
     color: #fff;
     margin: 5px 0;
 }
@@ -212,8 +239,8 @@ label{
 .btn-tour{
     width: 100%;
     background-color: #fff;
-    color: #F35E86;
-    border: 1px solid #F35E86;
+    color: #ED164F;
+    border: 1px solid #ED164F;
 }
 
 
@@ -401,7 +428,7 @@ label{
 
 .btn-login{
   width: 50%;
-  background-color: #F35E86;
+  background-color: #ED164F;
   margin-left: 25%;
   margin-right: auto;
   color: #fff;
@@ -495,7 +522,7 @@ label{
   width: 100%;
   height: 2.3em;
   background-color: #fff;
-  border: 0.1em solid #F35E86; 
+  border: 0.1em solid #ED164F; 
 }
 
 .pg-desc{
@@ -508,6 +535,87 @@ label{
   width: 20%;
 }
 
+
+/*photographer.html starts here*/
+
+
+.pg-container{
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+.p-g{
+    width: 100%;
+    margin: 0 0%
+
+}
+
+
+.image-objects{
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+
+
+.btn-more{
+    width: 35%;
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+}
+
+
+.pg-db{
+    margin: 1em;
+    padding: 0;
+    display: block;
+    width: 100%;
+}
+
+
+.pg-pr{
+    width: 48%;
+    float: left;
+}
+
+
+.pg-pr > li{
+    margin: 0;
+}
+
+
+.p-price > span{
+    font-size: 1.8em;
+}
+
+
+.book-pg{
+    width: 45%;
+    height: 3em;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: -1;
+    background-color: #ED164F;
+    border: 0;
+    color: #ffffff;
+    font-size: 1.3em;
+}
+
+
+.p-star{
+    width: 1.2em;
+    margin: 0 -0.2em;
+}
+
+
+.p-nld{
+    margin: 1em;
+}
 /* To be removed when building desktop responsive*/
 
 @media screen and (min-width: 450px){
