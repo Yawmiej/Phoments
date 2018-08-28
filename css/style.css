@@ -39,6 +39,11 @@ li{
 }
 
 
+article{
+    text-align: justify;
+}
+
+
 
 .whole-container{
     width: 100%;
@@ -735,12 +740,33 @@ label{
 }
 
 
+.vf-det{
+    width: 100%;
+    display: block;
+}
+
+
 
 /* To be removed when building desktop responsive*/
 
-@media screen and (min-width: 450px){
-    body, html{
-        width: 450px;
+
+@media screen and (min-width: 451px) and (max-width: 700px){
+    body,
+    html{
+        width: 700px;
         margin: auto;
     }
+
+
+    main{
+        width: 350px;
+    }
+
+
+    .pg-profile{
+        width: 350px;
+        float: left;
+    }
+
+
 }
