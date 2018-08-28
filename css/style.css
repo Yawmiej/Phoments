@@ -293,8 +293,8 @@ label{
 
 .rate-star{
     display: inline-block;
-    margin-right: -2px;
-    width: 15px;
+    margin-right: -7px;
+    width: 20px;
 }
 
 
@@ -311,7 +311,7 @@ label{
     display: inline;
 }
 
-.profile-location{
+.loc-dat{
     display: block;
 }
 
@@ -510,8 +510,8 @@ label{
 
 
 .pg-star{
-    width: 0.9em;
-    margin-right: -2px;
+    width: 1.2em;
+    margin-right: -5px;
 }
 
 .pg-dot{
@@ -569,6 +569,11 @@ label{
 }
 
 
+.btn-more:hover{
+    background-color: #c4c4c4;
+}
+
+
 .pg-db{
     margin: 1em;
     padding: 0;
@@ -593,13 +598,18 @@ label{
 }
 
 
+.stc-btn{
+    position: sticky;
+    position: -webkit-sticky;
+    top: -1px;
+}
+
+
 .book-pg{
     width: 45%;
     height: 3em;
     margin: 0;
     padding: 0;
-    position: sticky;
-    top: -1;
     background-color: #ED164F;
     border: 0;
     color: #ffffff;
@@ -607,15 +617,125 @@ label{
 }
 
 
+.book-pg:hover{
+    background-color: rgb(228, 6, 65);
+    box-shadow: 0.07em 0 0.8em #999;
+}
+
+
 .p-star{
     width: 1.2em;
-    margin: 0 -0.2em;
+    margin: 0 -0.3em;
 }
 
 
 .p-nld{
     margin: 1em;
 }
+
+
+.p-location{
+    margin: 0 0 1em 1.2em;
+}
+
+
+.p-details{
+    margin-top: 1.3em;
+}
+
+
+.det-group{
+    display: inline-block;
+    width: 45%;
+    padding: 0.3em;
+}
+
+
+.p-sa{
+    text-align: justify;
+    font-size: 1.1em;
+    margin: 0 0.5em;
+}
+
+
+.t-rate{
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+}
+
+
+.l-star{
+    width: 1.1em;
+    margin-right: -15px;
+}
+
+
+.t-rating{
+    margin: 0.5em;
+}
+
+
+.slim-hr{
+    border: 0.8px solid #dad7d7;
+}
+
+
+.rating-x{
+    font-size: 1.5em;
+    width: 100%;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+
+
+.x-rate{
+    float: right;
+}
+
+
+.x-star{
+    width: 1.5em;
+    margin: 0 0 0 -13px;
+}
+
+
+.rate-story{
+    width: 100%;
+    margin: 1em 0 0;
+}
+
+
+.prf-icon{
+    width: 3.5em;
+    float: left;
+}
+
+
+.rtr-nl{
+    position: relative;
+    top: 3px;
+    left: 15px;
+}
+
+
+.rtr-nm{
+    font-size: 1.2em;
+}
+
+
+.rtr-star{
+    width: 1.5em;
+    margin-left: -8px;
+}
+
+
+#rtr-artcl{
+    text-align: justify;
+}
+
+
+
 /* To be removed when building desktop responsive*/
 
 @media screen and (min-width: 450px){

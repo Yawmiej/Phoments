@@ -3,7 +3,7 @@
   <head>
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Photgrapher Name</title>
+      <title>Photographer Name</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
       <script src="js/main.js"></script>
@@ -73,11 +73,185 @@
                 <span class="rate-count" id="rateCount">54</span>
             </li>
           </div>
-          <button class="book-pg" id="bookPg" type="button" onclick="book()">Request to Book</button>
+          <div class="stc-btn">
+            <button class="book-pg" id="bookPg" type="button" onclick="book()">Request to Book</button>
+          </div>
         </div>
+        <br>
         <div class="p-nld">
           <h4 id="PgName">Eporse Media</h4>
-          <span class="p-location">Unilag</span>
+          <span class="p-location" id="pLocation">Unilag</span>
+          <div class="p-details">
+            <div class="det-group">
+              <img src="svg/experience.svg" class="det-img" alt="experience">
+              <span id="experience">4+</span><span> years</span>
+            </div>
+            <div class="det-group">
+              <img src="svg/cam-type.svg" class="det-img" alt="camera-type">
+              <span id="camType">Nikon D30</span>
+            </div>
+            <div class="det-group">
+              <img src="svg/thumbs-up.svg" class="det-img" alt="expertise">
+              <span id="expertise">Portraits, Events</span>
+            </div>
+            <div class="det-group">
+              <img src="svg/watch.svg" class="det-img" alt="schedule">
+              <span id="schedule">08:00am - 21:30pm</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-story">
+          <article id="pStory" class="p-sa">
+            Life itself passes like a blur, but some moments are so special that we have to freeze them in time. 
+            At Eporse media, we pride ourselves at capturing the seemingly insignificant yet immensly pleasurable 
+            moments that make those moments seem special. Whether it’s that tender touch or the subtle cringe of a 
+            coming smile or the ear-to-ear grin, Eporse media’s got you.<br><br>
+            <p><strong>Studio Affilliation: </strong><span id="std-aff">Studio De Best, Unilag</span></p>
+          </article>
+        </div>
+      </section>
+      <section class="t-rating" id="rating">
+        <h2><strong><span class="rate-numb" id="rateCount">54</span> Reviews</strong>
+          <div class="t-rate" id="tRate">
+            <img src="svg/full-star.svg" class="l-star">
+            <img src="svg/full-star.svg" class="l-star">
+            <img src="svg/full-star.svg" class="l-star">
+            <img src="svg/full-star.svg" class="l-star">
+            <img src="svg/empty-star.svg" class="l-star">
+          </div>
+        </h2>
+        <hr class="slim-hr">
+        <div class="rating-group">
+          <li class="rating-x">
+            <span>Quality</span>
+            <div class="x-rate" id="qRate">
+                <img src="svg/full-star.svg" class="x-star">
+                <img src="svg/full-star.svg" class="x-star">
+                <img src="svg/full-star.svg" class="x-star">
+                <img src="svg/full-star.svg" class="x-star">
+                <img src="svg/empty-star.svg" class="x-star">
+            </div>
+          </li>
+          <li class="rating-x">
+              <span>Service</span>
+              <div class="x-rate" id="qRate">
+                  <img src="svg/full-star.svg" class="x-star">
+                  <img src="svg/full-star.svg" class="x-star">
+                  <img src="svg/full-star.svg" class="x-star">
+                  <img src="svg/half-star.svg" class="x-star">
+                  <img src="svg/empty-star.svg" class="x-star">
+              </div>
+          </li>
+          <li class="rating-x">
+              <span>Customer Service</span>
+              <div class="x-rate" id="qRate">
+                  <img src="svg/full-star.svg" class="x-star">
+                  <img src="svg/full-star.svg" class="x-star">
+                  <img src="svg/full-star.svg" class="x-star">
+                  <img src="svg/half-star.svg" class="x-star">
+                  <img src="svg/empty-star.svg" class="x-star">
+              </div>
+            </li>
+            <li class="rating-x">
+              <span>Punctuality</span>
+              <div class="x-rate" id="qRate">
+                  <img src="svg/full-star.svg" class="x-star">
+                  <img src="svg/full-star.svg" class="x-star">
+                  <img src="svg/full-star.svg" class="x-star">
+                  <img src="svg/full-star.svg" class="x-star">
+                  <img src="svg/full-star.svg" class="x-star">
+              </div>
+            </li>
+            <li class="rating-x">
+              <span>Value</span>
+              <div class="x-rate" id="qRate">
+                  <img src="svg/full-star.svg" class="x-star">
+                  <img src="svg/full-star.svg" class="x-star">
+                  <img src="svg/full-star.svg" class="x-star">
+                  <img src="svg/full-star.svg" class="x-star">
+                  <img src="svg/empty-star.svg" class="x-star">
+              </div>
+            </li>
+        </div>
+        <br>
+        <div class="rate-story">
+          <li class="story-block" id="rateBlock">
+            <div class="rtr-prf">
+              <img src="svg/profile-icon.svg" alt="profile-icon" class="prf-icon" id="profile-icon">
+              <div class="rtr-nl">
+                <span class="rtr-nm" id="username"><strong>Kelvin</strong></span>
+                <span class="loc-dat" id="rDate">May 2018</span>
+              </div>
+            </div>
+            <p>
+              <div class="rtr-rtn" id="rtrRating">
+                <img src="svg/full-star.svg" class="rtr-star">
+                <img src="svg/full-star.svg" class="rtr-star">
+                <img src="svg/full-star.svg" class="rtr-star">
+                <img src="svg/full-star.svg" class="rtr-star">
+                <img src="svg/full-star.svg" class="rtr-star">
+              </div>
+            </p>
+            <article>
+              <p id="rtr-artcl">
+                Never have I met a punctual photographer before, but eporse was something else.
+                He came right on time, was very professional and courteous. During the shoot,
+                  he was very patient with our 5 year old daughter, I think she has a crush on him now lol.
+                  But the service was a good one, I’ll sure be booking him again. 
+              </p>
+            </article>
+            <hr class="slim-hr">
+          </li>
+          <li class="story-block" id="rateBlock">
+            <div class="rtr-prf">
+              <img src="svg/profile-icon.svg" alt="profile-icon" class="prf-icon" id="profile-icon">
+              <div class="rtr-nl">
+                <span class="rtr-nm" id="username"><strong>Abayomi</strong></span>
+                <span class="loc-dat" id="rDate">May 2018</span>
+              </div>
+            </div>
+            <p>
+              <div class="rtr-rtn" id="rtrRating">
+                <img src="svg/full-star.svg" class="rtr-star">
+                <img src="svg/full-star.svg" class="rtr-star">
+                <img src="svg/full-star.svg" class="rtr-star">
+                <img src="svg/full-star.svg" class="rtr-star">
+                <img src="svg/full-star.svg" class="rtr-star">
+              </div>
+            </p>
+            <article>
+              <p id="rtr-artcl">
+                Absolutely Amazing! 
+              </p>
+            </article>
+            <hr class="slim-hr">
+          </li>
+          <li class="story-block" id="rateBlock">
+            <div class="rtr-prf">
+              <img src="svg/profile-icon.svg" alt="profile-icon" class="prf-icon" id="profile-icon">
+              <div class="rtr-nl">
+                <span class="rtr-nm" id="username"><strong>PrettyU Modelling Agency</strong></span>
+                <span class="loc-dat" id="rDate">May 2018</span>
+              </div>
+            </div>
+            <p>
+              <div class="rtr-rtn" id="rtrRating">
+                <img src="svg/full-star.svg" class="rtr-star">
+                <img src="svg/full-star.svg" class="rtr-star">
+                <img src="svg/full-star.svg" class="rtr-star">
+                <img src="svg/full-star.svg" class="rtr-star">
+                <img src="svg/full-star.svg" class="rtr-star">
+              </div>
+            </p>
+            <article>
+              <p id="rtr-artcl">
+               We generally need photographers to shoot our models and Eporse is a photographer first on our mindwhen we're in need. 
+               Very punctual and reliable, we get our prints in a matter of days.
+              </p>
+            </article>
+            <hr class="slim-hr">
+          </li>
+          <a href="#more-rating">View More ></a>
         </div>
       </section>
 
