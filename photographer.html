@@ -29,8 +29,22 @@
     <header>
       <div class="search-head">
         <a href="index.html"><img src="svg/logo-black.svg" alt="logo"></a>
-        <input type="text" placeholder='Try "15000"' class="pg-search " >
+        <input type="text" placeholder='Try "15000"' class="hdr-search" id="hd-search" >
         <img src="svg/hamburger.svg" class="hamburger" id="menu-icon" onclick="openNav()">
+        <ul class="head-links">
+          <li class="link-items">
+            <a href="#Become-a-photographer" >Become a Photographer</a>
+          </li>
+          <li class="link-items">
+            <a href="#Moments">Moments</a>
+          </li>
+          <li class="link-items">
+            <a href="register.html">Sign Up</a>
+          </li>
+          <li class="link-items">
+            <a href="login.html">Login</a>
+          </li>
+        </ul>
       </div>
     </header>
     <div class="nav-opacity" id="navLeft" onclick="closeNav()"></div>
@@ -53,15 +67,66 @@
     <main>
       <section class="pg-pics">
           <div class="p-container">
-              <img src="img/Photograph.png" class="p-g" id="Photograph">
+              <img src="img/SPhotograph.png" class="p-g" id="Photograph">
               <div class="image-objects">
-                <a href="#upload"> <img src="svg/upload.svg"></a>
-                <a href="#like"><img src="svg/favourite.svg"></a>
+                <a href="#upload"> <img src="svg/upload.svg" class="img-obj"></a>
+                <a href="#like"><img src="svg/favourite.svg" class="img-obj"></a>
               </div>
               <button class="butn btn-more" type="button">View Photos</button>
           </div>
+          <div class="nv-scon">
+            <hr class="slim-hr">
+            <div class="nv-ss">
+              <li class="nv-pg"><a href="#overview">Overview</a></li>
+              <img src="svg/dot.svg" width="5em">
+              <li class="nv-pg"><a href="#review">Reviews</a></li>
+              <img src="svg/dot.svg" width="5em">
+              <li class="nv-pg"><a href="#ThePhotographer">The Photographer</a></li>
+              <div class="img-actn">
+                  <li class="nv-pg"><img src="svg/share.svg">   Share</li>
+                  <li class="nv-pg"><img src="svg/save.svg">   Save</li>
+              </div>
+            </div>
+            <hr class="slim-hr">
+          </div>
       </section>
-      <section class="pg-profile">
+      <section class="lpg-info">
+          <div class="pg-pr">
+              <li class="p-price"><span id="pgPrice"><strong>₦10,000</strong></span> per session</li>
+              <li class="p-rate">
+                  <img src="svg/full-star.svg" class="p-star">
+                  <img src="svg/full-star.svg" class="p-star">
+                  <img src="svg/full-star.svg" class="p-star">
+                  <img src="svg/full-star.svg" class="p-star">
+                  <img src="svg/empty-star.svg" class="p-star">
+                  <img src="svg/dot.svg" width="8em">
+                  <span class="rate-count" id="rateCount">54</span>
+              </li>
+            </div>
+            <br>
+            <hr class='slim-hr'>
+            <form class="pgbk-frm">
+              <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" placeholder="Anywhere" id="location" class="form-control" required>
+              </div>
+              <div class="form-group half-frm">
+                <label for="event date">Event Date</label>
+                <input type="date" placeholder="mm/dd/yyy" id="evDate" class="form-control" required>
+              </div>
+              <div class="form-group half-frm">
+                <label for="Check in time">Check In Time</label>
+                <input type="time" placeholder="00:00" id="chkTime" class="form-control" required>
+              </div>
+              <div class="submit">
+                <input type="submit" class="psbmt-btn" value="Request to Book">
+              </div>
+            </form>
+            <p style="color:#999; text-align:center">You won't be charged yet.</p>
+            <hr class="slim-hr">
+            <a href="#reportpg" style="text-decoration: none"><p style="color: #999; text-align: center;"><strong>Report this listing</strong></p></a>
+      </section>
+      <section class="pg-profile hlf-cls">
         <div class="pg-db">
           <div class="pg-pr">
             <li class="p-price"><span id="pgPrice"><strong>₦10,000</strong></span> per session</li>
@@ -92,7 +157,7 @@
               <img src="svg/cam-type.svg" class="det-img" alt="camera-type">
               <span id="camType">Nikon D30</span>
             </div>
-            <div class="det-group">
+            <div class="det-group ldsp-nne">
               <img src="svg/thumbs-up.svg" class="det-img" alt="expertise">
               <span id="expertise">Portraits, Events</span>
             </div>
@@ -114,7 +179,7 @@
           </article>
         </div>
       </section>
-      <section class="t-rating" id="rating">
+      <section class="t-rating hlf-cls" id="review">
         <h2><strong><span class="rate-numb" id="rateCount">54</span> Reviews</strong>
           <div class="t-rate" id="tRate">
             <img src="svg/full-star.svg" class="l-star">
@@ -258,7 +323,7 @@
           <a href="#more-rating">View More ></a>
         </div>
       </section>
-      <section class="bhd-vf">
+      <section class="bhd-vf hlf-cls" id="ThePhotographer">
         <p style="margin: 0 0 0 4em; color: #999;">Behind the viewfinder</p>
         <div class="vf-det">
           <h3 class="pg-fullName" id="pgFullName" style="margin: 0.5em 0 0 1em; float: left">Emmanuel Adeyemi</h3>

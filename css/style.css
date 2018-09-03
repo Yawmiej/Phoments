@@ -78,7 +78,7 @@ article{
 .hamburger{
     float: right;
     width: 40px;;
-    margin: 10px;
+    margin: 0 10px 0 2px;
 }
 
 
@@ -99,6 +99,11 @@ article{
 
 
 .search-f{
+    display: none;
+}
+
+
+.head-links{
     display: none;
 }
 
@@ -186,8 +191,8 @@ it is applied to all pages with menu*/
 
 
 .main{
-    margin: 10px;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -258,6 +263,23 @@ label{
     background-color: rgb(253, 246, 246);
 }
 
+
+.fap-btn{
+    width: 20%;
+    height: 40px;
+    background-color: #ED164F;
+    color: #fff;
+    margin: 0 0 0 2.5em;
+    border: none;
+    border-radius: 0.5em;
+    display: none;
+}
+
+
+.bc-ptg{
+    display: none;
+}
+
 .testimonials{
     width: 100%;
     margin: 0;
@@ -276,7 +298,7 @@ label{
     flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    margin-top: 30px;
+    margin: 30px 0 0;
 }
 
 
@@ -341,11 +363,7 @@ label{
 }
 
 
-.footer-items{
-    width: 60%;
-    margin: 0 auto;
-    font-size: 1.2em;
-}
+
 
 
 /*Section1 and index.html style ends here*/
@@ -453,17 +471,31 @@ label{
   margin: 1em;
 }
 
-.search-head input{
-  width: 43%;
-  margin-left: 1%;
+.hdr-search{
+  width: 45%;
+  height: 35px;
+  margin: 0 0 0 1em;
+  border-radius: 5px;
+  border: 1px solid #999;
+  padding: 0 0 0 3em;
+  background: white;
+  background-image: url('../svg/search-icon.svg');
+  background-size: 35px;
+  background-position: 0 -32px;
+  background-repeat: no-repeat;
 }
 
 .search-head > a > img{
-  width: 40%;
+  width: 110px;
 }
 
 .home-pgs{
     display: none;
+    margin: 5em 0 0;
+}
+
+.home-pgs h2{
+    margin: 0 0 0.5em 3em;
 }
 
 .pg-row{
@@ -476,7 +508,7 @@ label{
 
 
 .pg-card{
-    width: 30%;
+    width: 28%;
     display: inline-block;
     padding: 0.5em;
 }
@@ -533,6 +565,11 @@ label{
   border: 0.1em solid #ED164F; 
 }
 
+
+.desc-sec{
+    margin: 0 1em 3em;
+}
+
 .pg-desc{
   display: none;
 }
@@ -576,6 +613,11 @@ label{
 }
 
 
+.nv-scon{
+    display: none;
+}
+
+
 .pg-db{
     margin: 1em;
     padding: 0;
@@ -604,6 +646,13 @@ label{
     position: sticky;
     position: -webkit-sticky;
     top: -1px;
+}
+
+
+.stc-btn::after{
+    content: "";
+    clear: both;
+    display: table;
 }
 
 
@@ -653,6 +702,11 @@ label{
 }
 
 
+.lpg-info{
+    display: none;
+}
+
+
 .p-sa{
     text-align: justify;
     font-size: 1.1em;
@@ -681,6 +735,7 @@ label{
 
 .slim-hr{
     border: 0.8px solid #dad7d7;
+    width: 100%;
 }
 
 
@@ -746,7 +801,43 @@ label{
 
 
 
-/* First MEdia Query to adjust mobile view from 420px above for better visibility*/
+/* First Media Query for small screen size*/
+
+
+@media screen and (max-width: 355px){
+
+
+
+    .search-head > a > img{
+        width: 90px;
+    }
+
+
+    .hdr-search{
+        width: 42%;
+    }
+
+
+    .hamburger{
+        width: 30px;
+    }
+
+
+    .t-rating > h2 > strong{
+        font-size: 0.8em;
+    }
+
+    .slim-hr{
+        width: 90%;
+        margin: 0.5em 0 0.5em 2%;
+        padding: 0;
+    }
+}
+
+
+/* First MEdia Query to adjust mobile view from 420px to 750above for better visibility*/
+
+
 
 
 @media screen and (min-width: 450px) and (max-width: 750px){
@@ -776,7 +867,46 @@ label{
         justify-content: center;
         align-items: center;
     }    
+
+
+    /*photographer.html*/
+    .hdr-search{
+        width: 55%
+    }
+
+    
+    .p-g{
+        height: auto;
+    }
+
+
+    .btn-more{
+        width: 150px;
+    }
+
+
+    .book-pg{
+        width: 200px;
+        float: right;
+    }
+
+
+    .p-container{
+        background-image: url('../img/photograph.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 350px;
+    }
+    
+    
+    .p-g{
+        display: none;
+    }
 }
+
+
+
+/**/
 
 
 /*Second Media Query to change display to Desktop view from 751px above*/
@@ -818,20 +948,48 @@ label{
     }
 
 
-    .search-f input{
-        width: 600px;
+    .search-f input[type=text]{
+        width: 80%;
         height: 35px;
+        float: left;
         box-sizing: border-box;
-        border: 1px solid #ccc;
+        border: 1px solid #ED164F;
+        border-radius: 5px 0 0 5px;
         background: white;
         background-image: url('../svg/search-icon.svg');
         background-size: 35px;
         background-position: 0 -32px;
         background-repeat: no-repeat;
-        padding: 12px 20px 12px 60px;
-        font-size: 1.4em;
+        padding: 0px 20px 0px 60px;
+        font-size: 1em;
         color: rgb(85, 84, 84);
         margin: 0 auto;
+    }
+
+
+    .src-btn{
+        width: 20%;
+        height: 35px;
+        float: left;
+        padding: 5px;
+        background: #ED164F;
+        border: 1px solid #ED164F;
+        border-radius: 0 5px 5px 0;
+        border-left: none;
+        cursor: pointer;
+    }
+
+
+    .src-btn:hover{
+        background-color: rgb(219, 20, 73);
+        border-color:   rgb(219, 20, 73);
+    }
+
+
+    .search-f::after{
+        content: "";
+        clear: both;
+        display: table;
     }
 
 
@@ -865,38 +1023,359 @@ label{
         width: 100%;
         margin-top: 1em;
         display: flex;
+        flex-wrap: wrap;
         align-content: center;
         justify-content: center;
     }
 
 
+    .pg-ifv{
+        position: relative;
+    }
+
+
+    .pg-fav{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+
     .desc-info{
-        padding: 1em;
-        box-sizing: border-box;
-        width: 25%;
+        padding: 0.5em;
+        width: 21%;
+        border: 1.5px solid #ED164F;
+        border-radius: 15px;
+        margin: 0 1em 1em;;
     }
 
 
     .desc-info > h4{
         margin: 0;
+        padding: 0;
         font-size: 1em;
-        display: block;
     }
 
 
     .desc-img{
-        width: 80px;
-        margin: 1em auto;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 1em;
+        padding: 0.5em;
     }
 
 
     .desc-txt{
         text-align: justify;
     }
+
+
+    .fap-btn{
+        display: unset;
+    }
+
+
+    .bc-ptg{
+        display: unset;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+
+    .bp-txt{
+        position: absolute;
+        top: -30px;
+        left: 100px;
+        color: #fff;
+    }
+
+
+    .bp-btn{
+        width: 60%;
+        height: 3em;
+        display: block;
+        margin: 1em 0 0;
+        border: 0 solid;
+        border-radius: 5px;
+        background-color: rgb(49, 49, 49);
+        font-weight: bold;
+    }
+
+
+    .bp-btn:hover{
+        background-color: #000;
+    }
+
+
+    .mt-pgs{
+        margin: 2em;
+    }
+
+
+    .testimonials{
+        margin: 4em 0 0;
+    }
+
+
+    .testimonials h3{
+        margin: 0 0 0 3em;
+        font-size: 1.8em
+    }
+
+
+    .scrolling-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-between;
+    }
+
+
+    .test-card{
+        width: 20%;
+        height: 5%;
+    }
+
+
+    .no-card{
+        display: none;
+    }
+
+
+    .footer{
+        background-color: #fff;
+        padding: 1em;
+        margin: 5em 0 0;
+    }
+
+
+    .footer-items{
+        width: 300px;
+        margin: 0 auto;
+        font-size: 1.8em;
+        color: #000;
+    }
+
+
+    .soc-icn{
+        width: 2em;
+    }
+
+
+    .soc-icnl{
+        width: 2.5em;
+    }
+
+
+    /*photographer.html*/
+
+
+    .search-head > a > img{
+        width: 150px;
+    }
+
+    .hdr-search{
+        width: 250px;
+        transition: 0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
+    }
+
+
+    .hdr-search:focus{
+        width: 500px;
+        height: 40px;
+    }
+
+
+    .head-links{
+        float: right;
+        display: unset;
+        margin: 0 2em 0 0;
+    }
+
+
+    .wht-txt{
+        color: white;
+        margin: 0.5em 0;
+        font-weight: 500;
+    }
+
+
+    .link-items{
+        text-decoration: none;
+        display: inline-block;
+        padding: 0.5em 1em 0.5em;
+        color: inherit;
+        font-size: 1.1em;
+    }
+
+
+    .link-items:hover{
+        background-color: #ED164F;
+        border: 0 solid;
+        border-right: 1px;
+        border-radius: 5px;
+        color: #fff;
+    }
+
+
+    .link-items > a{
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .p-container{
+        background-image: url('../img/lphotograph.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 450px;
+    }
+    
+    
+    .p-g{
+        display: none;
+    }
+
+
+    .img-obj{
+        width: 40px;
+        padding: 0.2em;
+    }
+
+
+    .btn-more{
+        width: 150px;
+    }
+
+
+    .book-pg{
+        width: 200px;
+    }
+
+
+    .hlf-cls{
+        width: 50%;
+        height: auto;
+        padding: 0 0 0 2em;
+        margin: 0 0 0 4em;
+    }
+
+    .pg-pics{
+        width: 100%;
+        position: relative;
+    }
+
+
+    .nv-scon{
+        position: sticky;
+        -webkit-position: sticky;
+        top: -1px;
+        width: 100%;
+        display: unset;
+    }
+
+
+    .nv-ss{
+        padding: 0 8em;
+    }
+
+
+    .nv-pg{
+        display: inline-block;
+        font-size: 1.2em;
+    }
+
+
+    .nv-pg > a{
+        text-decoration: none;
+        color: #999;
+    }
+
+
+    .nv-pg > a:hover{
+        color: #ED164F;
+    }
+
+
+    .nv-pg > a:active{
+        color: #ED164F;
+    }
+
+
+    .img-actn{
+        float: right;
+        color: #999;
+    }
+
+
+    .pg-db{
+        display: none;
+    }
+
+    #PgName{
+        font-size: 2.5em;
+    }
+
+
+    .p-location{
+        font-size: 1.5em;
+    }
+
+
+    .det-group{
+        display: inline-block;
+        width: 30%;
+    }
+
+
+    .ldsp-nne{
+        display: none;
+    }
+
+
+    .lpg-info{
+        display: unset;
+        padding: 2em;
+        border: 1px solid #c4c4c4;
+        float: right;
+        width: 35%;
+        margin: 0 3em 0 0;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 1px;
+    }
+
+    .pg-pr{
+        margin: 0 0 2em 0;
+    }
+
+    .half-frm{
+        width: 45%;
+        display: inline-block;
+    }
+
+
+    .psbmt-btn{
+        width: 100%;
+        height: 3em;
+        background-color: #ED164F;
+        border: none;
+        color: #fff;
+        font-size: 1.2em;
+        border-radius: 5px;
+    }
 }
 
+
+@media screen and (min-width: 752px) and (max-width: 975px){
+    .p-container{
+        height: 320px;
+    }
+}
+
+
 /*Third Media Query to give a fixed width and auto mergin left and right*/
-@media screen and (min-width: 960px){
+media screen and (min-width: 960px){
     html{
         width: 960px;
         margin: 0 auto;

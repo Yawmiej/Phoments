@@ -31,6 +31,20 @@
             <header>
                 <div class="head">
                     <img class="logo" src="svg/logo.svg">
+                    <ul class="head-links wht-txt">
+                        <li class="link-items">
+                            <a href="#Become-a-photographer" >Become a Photographer</a>
+                        </li>
+                        <li class="link-items">
+                            <a href="#Moments">Moments</a>
+                        </li>
+                        <li class="link-items">
+                            <a href="register.html">Sign Up</a>
+                        </li>
+                        <li class="link-items">
+                            <a href="login.html">Login</a>
+                        </li>
+                    </ul>
                     <img src="svg/hamburger.svg" class="hamburger" id="menu-icon" onclick="openNav()">
                     <div class="head-text">
                         <h3>Find and Book Freelance Photographers</h3>
@@ -38,7 +52,8 @@
                     </div>
                     <br>
                     <form class="search-f">
-                        <input type="text" name="search" placeholder='Try "15000"'>
+                        <input type="text" name="searchInput" id="searchInput" placeholder='Try "15000"'>
+                        <input type="button" name="search" id="search" value="Search" class="src-btn">
                     </form>
                 </div>
             </header>
@@ -90,10 +105,13 @@
                 </form>
             </section>
             <section class="home-pgs">
-                <h2>Photographers</h2>
+                <h2>Top Photographers</h2>
                 <div class="pg-container">
                     <div class="pg-card">
-                        <a href="#"><img src="img/Boye.png" class="pg-img"></a>
+                        <div class="pg-ifv">
+                            <a href="#"><img src="img/Boye.png" class="pg-img"></a>
+                            <img src="svg/favourite.svg" class="pg-fav">
+                        </div>
                         <div class="pg-list">
                             <img src="svg/profile-icon.svg" class="pg-icon">
                             <li class="pg-name">Eporse Media</li>
@@ -110,7 +128,10 @@
                         </div>
                     </div>
                     <div class="pg-card">
-                        <a href="#"><img src="img/Kazeem.png" class="pg-img"></a>
+                        <div class="pg-ifv">
+                            <a href="#"><img src="img/Kazeem.png" class="pg-img"></a>
+                            <img src="svg/favourite.svg" class="pg-fav">
+                        </div>
                         <div class="pg-list">
                             <img src="svg/profile-icon.svg" class="pg-icon">
                             <li class="pg-name">Adewale Kazeem</li>  
@@ -127,7 +148,10 @@
                         </div>
                     </div>
                     <div class="pg-card">
-                        <a href="#"><img src="img/Matthew.png" class="pg-img"></a>
+                        <div class="pg-ifv">
+                            <a href="#"><img src="img/Matthew.png" class="pg-img"></a>
+                            <img src="svg/favourite.svg" class="pg-fav">
+                        </div>
                         <div class="pg-list">
                             <img src="svg/profile-icon.svg" class="pg-icon">
                             <li class="pg-name">Esther Afelishe</li>
@@ -144,7 +168,10 @@
                         </div>
                     </div>
                     <div class="pg-card">
-                        <a href="#"><img src="img/Mayowa.png" class="pg-img"></a>
+                        <div class="pg-ifv">
+                            <a href="#"><img src="img/Mayowa.png" class="pg-img"></a>
+                            <img src="svg/favourite.svg" class="pg-fav">
+                        </div>
                         <div class="pg-list">
                             <img src="svg/profile-icon.svg" class="pg-icon">
                             <li class="pg-name">Boye 69</li>  
@@ -161,7 +188,10 @@
                         </div>
                     </div>
                     <div class="pg-card">
-                        <a href="#"><img src="img/Oluchi.png" class="pg-img"></a>
+                        <div class="pg-ifv">
+                            <a href="#"><img src="img/Oluchi.png" class="pg-img"></a>
+                            <img src="svg/favourite.svg" class="pg-fav">
+                        </div>
                         <div class="pg-list">
                             <img src="svg/profile-icon.svg" class="pg-icon">
                             <li class="pg-name">Dammy Ayo</li>
@@ -178,62 +208,14 @@
                         </div>
                     </div>
                     <div class="pg-card">
-                        <a href="#"><img src="img/Kazeem.png" class="pg-img"></a>
+                        <div class="pg-ifv">
+                            <a href="#"><img src="img/Kazeem.png" class="pg-img"></a>
+                            <img src="svg/favourite.svg" class="pg-fav">
+                        </div>
                         <div class="pg-list">
                             <img src="svg/profile-icon.svg" class="pg-icon">
                             <li class="pg-name">Abiodun Lateef</li>
                             <li class="pg-price"><span id="pgPrice">‎₦14,000</span> per session</li>
-                            <li class="pg-rate">
-                                <img src="svg/full-star.svg" class="pg-star">
-                                <img src="svg/full-star.svg" class="pg-star">
-                                <img src="svg/full-star.svg" class="pg-star">
-                                <img src="svg/full-star.svg" class="pg-star">
-                                <img src="svg/empty-star.svg" class="pg-star">
-                                <img src="svg/dot.svg" class="pg-dot">
-                                <span class="rate-count" id="rateCount">54</span>
-                            </li>
-                        </div>
-                    </div>
-                    <div class="pg-card">
-                        <a href="#"><img src="img/Matthew.png" class="pg-img"></a>
-                        <div class="pg-list">
-                            <img src="svg/profile-icon.svg" class="pg-icon">
-                            <li class="pg-name">Jayswitch Art</li>
-                            <li class="pg-price"><span id="pgPrice">‎₦11,000</span> per session</li>
-                            <li class="pg-rate">
-                                <img src="svg/full-star.svg" class="pg-star">
-                                <img src="svg/full-star.svg" class="pg-star">
-                                <img src="svg/full-star.svg" class="pg-star">
-                                <img src="svg/full-star.svg" class="pg-star">
-                                <img src="svg/empty-star.svg" class="pg-star">
-                                <img src="svg/dot.svg" class="pg-dot">
-                                <span class="rate-count" id="rateCount">54</span>
-                            </li>
-                        </div>
-                    </div>
-                    <div class="pg-card">
-                        <a href="#"><img src="img/Boye.png" class="pg-img"></a>
-                        <div class="pg-list">
-                            <img src="svg/profile-icon.svg" class="pg-icon">
-                            <li class="pg-name">Yomi Pela</li>
-                            <li class="pg-price"><span id="pgPrice">‎₦8,000</span> per session</li>
-                            <li class="pg-rate">
-                                <img src="svg/full-star.svg" class="pg-star">
-                                <img src="svg/full-star.svg" class="pg-star">
-                                <img src="svg/full-star.svg" class="pg-star">
-                                <img src="svg/full-star.svg" class="pg-star">
-                                <img src="svg/empty-star.svg" class="pg-star">
-                                <img src="svg/dot.svg" class="pg-dot">
-                                <span class="rate-count" id="rateCount">54</span>
-                            </li>
-                        </div>
-                    </div>
-                    <div class="pg-card">
-                        <a href="#"><img src="img/Oluchi.png" class="pg-img"></a>
-                        <div class="pg-list">
-                            <img src="svg/profile-icon.svg" class="pg-icon">
-                            <li class="pg-name">Tessy James Media</li>
-                            <li class="pg-price"><span id="pgPrice">‎₦7,500</span> per session</li>
                             <li class="pg-rate">
                                 <img src="svg/full-star.svg" class="pg-star">
                                 <img src="svg/full-star.svg" class="pg-star">
@@ -250,48 +232,55 @@
                     <button type="button" class="pg-button" ><strong>Show all (<span id="pgCount">70</span>+)</strong></button>
                 </div>
             </section>
-            <section class="pg-desc">
-                <div class="desc-info">
-                    <img src="svg/smiley.svg" class="desc-img">
-                    <br>    
-                    <h4>Easiest Way Yet!</h4>
-                    <p class="desc-txt">One tap, and you find a list of photographers that fit your unique needs. 
-                        Book - the photographer know what to do, 
-                        and you get your precious moments delivered to you in no time.
-                    </p>
+            <section class="desc-sec">
+                <div class="pg-desc">
+                    <div class="desc-info">
+                        <img src="svg/smiley.svg" class="desc-img">
+                        <strong><p>Easiest Way Yet!</p></strong>
+                        <span class="desc-txt">One tap, and you find a list of photographers that fit your unique needs. 
+                            Book - the photographer know what to do, 
+                            and you get your precious moments delivered to you in no time.
+                        </span>
+                    </div>
+                    <div class="desc-info">
+                        <img src="svg/mark.svg" class="desc-img">
+                        <strong><p>Any Event, Any Time</p></strong>
+                        <span class="desc-txt">
+                            Birthday, social event, or just for fun, whatever piques your fancy,
+                            we’ve got just the right freelance photographer for you. 
+                            Count on us to ensure that that precious moments are gloriously documented. 
+                        </span>
+                    </div>
+                    <div class="desc-info">
+                        <img src="svg/camera.svg" class="desc-img">
+                        <strong><p>Reliable Photographers</p></strong>
+                        <span class="desc-txt">
+                            Within our bank, we have a crop of reliable freelance photographers 
+                            who won’t let you down - and if they do, 
+                            we’ll either find you another photographer or refund you.
+                        </span>
+                    </div>
+                    <div class="desc-info">
+                        <img src="svg/headset.svg" class="desc-img">
+                        <strong><p>Prompt Customer Support</p></strong>
+                        <span class="desc-txt">
+                            Got any trouble, want to postpone your appointment, 
+                            or just need someone to talk to, our customer agents are here for you.
+                        </span>
+                    </div>
                 </div>
-                <div class="desc-info">
-                    <img src="svg/mark.svg" class="desc-img">
-                    <h4>Any Event, Any Time</h4>
-                    <br>
-                    <p class="desc-txt">
-                        Birthday, social event, or just for fun, whatever piques your fancy,
-                        we’ve got just the right freelance photographer for you. 
-                        Count on us to ensure that that precious moments are gloriously documented. 
-                    </p>
-                </div>
-                <div class="desc-info">
-                    <img src="svg/camera.svg" class="desc-img">
-                    <br>
-                    <h4>Reliable Freelance Photographers</h4>
-                    <p class="desc-txt">
-                        Within our bank, we have a crop of reliable freelane photographers 
-                        who won’t let you down - and if they do, 
-                        we’ll either find you another photographer or refund you.
-                    </span>
-                </div>
-                <div class="desc-info">
-                    <img src="svg/headset.svg" class="desc-img">
-                    <br>
-                    <h4>Prompt Customer Support</h4>
-                    <p class="desc-txt">
-                        Got any trouble, want to postpone your appointment, 
-                        or just need someone to talk to, our customer agents are here for you.
-                    </span>
+                <button type="button" href="#" value="Find a Photographer" class="fap-btn">Find a Photographer</button>
+            </section>
+            <section class="bc-ptg">
+                <img src="img/bec-photographer.png" width="100%" style="margin: 3em 0;">
+                <div class="bp-txt">
+                    <span style="font-size: 2.3em"><strong>Take amazing pictures?</strong></span><br>
+                    <span style="font-size: 1.5em">Let's help you get visibility </span>
+                    <button type="button" value="Become a Photographer" class="bp-btn">Become a Photographer</button>
                 </div>
             </section>
             <section class="testimonials">
-                <h4 class="test-text"><strong>What people are saying about our photographers</strong></h4>
+                <h3 class="test-text"><strong>What People are Saying about our Photographers</strong></h3>
                 <div class="scrolling-wrapper">
                     <div class="test-card">
                         <img src="img/Oluchi.png" alt="thumbnail1" class="thumbs">
@@ -316,7 +305,7 @@
                         </div>
                     </div>
                     <div class="test-card">
-                        <img src="img/Mayowa.png" alt="thumbnail1" class="thumbs">
+                        <img src="img/boye.png" alt="thumbnail1" class="thumbs">
                         <div class="ratings">
                                 <p>
                                     <img src="svg/full-star.svg" class="rate-star">
@@ -381,8 +370,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="test-card">
-                    <img src="img/Boye.png" alt="thumbnail1" class="thumbs">
+                    <div class="test-card no-card">
+                    <img src="img/Mayowa.png" alt="thumbnail1" class="thumbs">
                         <div class="i-ratings">
                                 <p id="tRate">
                                     <img src="svg/full-star.svg" class="rate-star">
@@ -409,9 +398,9 @@
             <hr>
             <div class="footer-items">
                 <span class="footer-text">Phoments</span>
-                <a href="facebook.com/phoments"><img src="svg/facebook-icon.svg"alt="facebook page"></a>
-                <a href="twitter.com/phoments"><img src="svg/twitter-icon.svg" alt="twitter page"></a>
-                <a href="instagram.com/phoments"><img src="svg/instagram-icon.svg" alt="instagram page"></a>
+                <a href="facebook.com/phoments"><img src="svg/facebook-icon.svg"alt="facebook page" class="soc-icn"></a>
+                <a href="twitter.com/phoments"><img src="svg/twitter-icon.svg" alt="twitter page" class="soc-icnl"></a>
+                <a href="instagram.com/phoments"><img src="svg/instagram-icon.svg" alt="instagram page" class="soc-icn"></a>
             </div>
         </footer>
     </div>
